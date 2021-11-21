@@ -1,0 +1,17 @@
+app:
+com.l*a.be*ke
+贝壳*房 Authorization参数
+2.31.0
+
+关键java类:
+com.b*.b*se.ut*l.bk.Dev*ceU*il
+
+逆向简析:
+Authori*ation:
+例子：{"a": 1, "b":2}
+     ==>> 表单数据排序 去除& a=1b=2 值为temp1
+     ==>> appsecret为 d5*********1ca ; hashlib.sha1(appsecret + temp1) 值为temp2
+     ==>> base64.b64encode( appid + ":" + temp2)   appid为 201*****d
+
+
+关键的key值都**隐去了，只是交流学习。

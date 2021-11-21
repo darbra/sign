@@ -1,0 +1,19 @@
+app:
+com.m*i.mj*eat*er
+墨*天气
+8.0206.02
+
+关键java类:
+com.mo*i.m*wea*her.li*rary.Di*est
+
+关键so:
+libenc*ypt.so 0x234*
+
+逆向简析:
+sign:
+例子：{"a": 1, "b": 2}
+     ==>> 表单数据json dump 并去除空格 {"a":1,"b":2} 为temp
+     ==>> temp + salt 为 temp2 , salt值为 KA****id
+     ==>> md5 temp2 hexdigest
+
+关键的key值都**隐去了，只是交流学习。

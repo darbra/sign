@@ -1,0 +1,22 @@
+app:
+com.h*br.b*n
+BO*聘 sig参数
+8.060
+
+关键java类:
+com.t*l.si*ner.Y*WG
+
+关键so:
+libyz*g.so 0x963*
+
+逆向简析:
+boss直聘 sig参数:
+例子：params为{"a": 1, "b": 2}
+     ==>> 数据排序  a=1b=2 值为temp1
+     ==>> 左边加上 path 如 /api/zpgeek/app/geek/search/cardlist 值为temp2
+     ==>> 右边加上 a308************ab6 值为temp3
+     ==>> md5 hexdigest lower 为temp4
+     ==>> 左边加上 V2.0 为最终值
+
+
+关键的key值都**隐去了，只是交流学习。

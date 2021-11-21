@@ -1,0 +1,21 @@
+app:
+com.luc*y.l*t
+瑞*咖啡 sign参数
+4.4.0
+
+关键java类:
+com.luc*inco*fee.saf*boxlib.Cry*toHelper
+
+关键so
+libcr*pto*D.so 0x1B1C* 0x1828* 0x173D*
+
+逆向简析:
+sign:
+例子：{'a':1, 'b':2}
+==> a=1;b=2 为temp1
+==> temp+salt 为temp2  其中salt是"d********9"
+==> md5 digest 为temp3
+==> temp3 16字节分成4部分 每个部分字节转成int 如果是负数乘-1 然后四个结果拼接在一起就是最终结果
+
+
+关键的key值都**隐去了，只是交流学习。

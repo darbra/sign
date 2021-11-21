@@ -1,0 +1,20 @@
+app:
+com.r*tong.h*r
+海*航空 hnairSign参数
+8.1.1
+
+关键java类:
+com.r*tong.h*air.H*ASignature
+
+关键so:
+libsi*nat*re.so 0xD9C*
+
+逆向简析:
+hnairSign:
+例子：{"darbra": {"a": 1, "c":3}, "arbrad": {"b": 2, "d": 4}}
+     ==>> data数据里的二层嵌套进行排序，并且只需要value值  1234 值为temp1
+     ==>> 右边加上salt，temp1 + salt 为temp2, salt值为 F6B******069F
+     ==>> hmac: hmac.new(hmackey, temp2, digestmod=hashlib.sha1).hexdigest().upper()
+       hmackey为 21**********491
+
+关键的key值都**隐去了，只是交流学习。
